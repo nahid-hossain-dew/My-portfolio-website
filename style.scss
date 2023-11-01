@@ -1,3 +1,4 @@
+@import "variable";
 main{
     display: grid;
     grid-template-columns: 1.2fr 1fr 1fr;
@@ -10,7 +11,7 @@ main{
     p{
         // line-height: 1.5em;
         font-size: 1.1rem;
-        color: #a8a8a8;
+        color: $font-color;
     }
     .panel{
         display: grid;
@@ -20,16 +21,16 @@ main{
         }
     }
     .welcome{
-      background: #323230;
+      background: $main-color;
       padding: 30px 60px;
     //   grid-auto-rows: 1fr;
       border-radius: 10px;
       h1{
-        color: #a8a8a8;
+        color: $font-color;
         letter-spacing: .1em;
     }
     p{
-          color: #a8a8a8;
+          color: $font-color;
           letter-spacing: .05em;
           
         }
@@ -37,7 +38,7 @@ main{
             a{
                 
                 // display: grid;
-            color: #a8a8a8;
+            color: $font-color;
            
             margin-right: .5em;
             font-size: 12px;
@@ -54,7 +55,7 @@ main{
         align-self: flex-end;
         text-align: center;
         p{
-            color: #a8a8a8;
+            color: $font-color;
             font-size: 20px;
         }
       }
@@ -64,13 +65,13 @@ main{
         overflow: hidden;
         .text{
             padding: 1rem 1rem;
-            background: #323230;
+            background: $main-color;
             border-radius: 10px;
             margin-top: 20px;
            
             h2{
                 letter-spacing: .1em;
-                color: #a8a8a8;
+                color: $font-color;
             }
             p{
                 letter-spacing: .05em;  
@@ -89,11 +90,11 @@ main{
         min-height: 100%;
         .text{
             padding: 1rem 1rem;
-            background: #323230;
+            background:$main-color;
             border-radius: 10px;
             h2{
                 letter-spacing: .1em;
-                color: #a8a8a8;
+                color: $font-color;
             }
             p{
               letter-spacing: .05em;  
