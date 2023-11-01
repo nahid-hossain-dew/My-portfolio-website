@@ -1,0 +1,96 @@
+main {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr;
+  min-height: 100vh;
+  gap: 10px;
+}
+main img {
+  border-radius: 10px;
+  margin: 10px 0;
+}
+main p {
+  font-size: 1.1rem;
+  color: #a8a8a8;
+}
+main .panel {
+  display: grid;
+}
+main .panel img {
+  width: 100%;
+}
+main .welcome {
+  background: #323230;
+  padding: 30px 60px;
+  border-radius: 10px;
+}
+main .welcome h1 {
+  color: #a8a8a8;
+  letter-spacing: 0.1em;
+}
+main .welcome p {
+  color: #a8a8a8;
+  letter-spacing: 0.05em;
+}
+main .welcome nav a {
+  color: #a8a8a8;
+  margin-right: 0.5em;
+  font-size: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.1em 0.1em;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+main .welcome footer {
+  align-self: flex-end;
+  text-align: center;
+}
+main .welcome footer p {
+  color: #a8a8a8;
+  font-size: 20px;
+}
+main .about {
+  grid-template-rows: 3fr 1fr;
+  overflow: hidden;
+}
+main .about .text {
+  padding: 1rem 1rem;
+  background: #323230;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+main .about .text h2 {
+  letter-spacing: 0.1em;
+  color: #a8a8a8;
+}
+main .about .text p {
+  letter-spacing: 0.05em;
+}
+main .about img {
+  min-width: 100%;
+  min-height: 100%;
+}
+main .photos {
+  grid-template-rows: 1fr 3fr;
+  overflow: hidden;
+  min-width: 100%;
+  min-height: 100%;
+}
+main .photos .text {
+  padding: 1rem 1rem;
+  background: #323230;
+  border-radius: 10px;
+}
+main .photos .text h2 {
+  letter-spacing: 0.1em;
+  color: #a8a8a8;
+}
+main .photos .text p {
+  letter-spacing: 0.05em;
+}
+main .photos img {
+  min-width: 100%;
+  min-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,110 @@
+main{
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1fr;
+    min-height: 100vh;
+    gap: 10px;
+    img{
+        border-radius: 10px;
+        margin: 10px 0;
+    }
+    p{
+        // line-height: 1.5em;
+        font-size: 1.1rem;
+        color: #a8a8a8;
+    }
+    .panel{
+        display: grid;
+        // grid-template-columns: 1fr;
+        img{
+            width: 100%;
+        }
+    }
+    .welcome{
+      background: #323230;
+      padding: 30px 60px;
+    //   grid-auto-rows: 1fr;
+      border-radius: 10px;
+      h1{
+        color: #a8a8a8;
+        letter-spacing: .1em;
+    }
+    p{
+          color: #a8a8a8;
+          letter-spacing: .05em;
+          
+        }
+        nav {
+            a{
+                
+                // display: grid;
+            color: #a8a8a8;
+           
+            margin-right: .5em;
+            font-size: 12px;
+            text-decoration: none;
+            font-weight: bold;
+            // background-color: rgb(212, 214, 216);
+            padding: .1em .1em;
+            border-radius: 5px;
+            text-transform: uppercase;
+
+        }
+      }
+      footer{
+        align-self: flex-end;
+        text-align: center;
+        p{
+            color: #a8a8a8;
+            font-size: 20px;
+        }
+      }
+    }
+    .about{
+        grid-template-rows: 3fr 1fr;
+        overflow: hidden;
+        .text{
+            padding: 1rem 1rem;
+            background: #323230;
+            border-radius: 10px;
+            margin-top: 20px;
+           
+            h2{
+                letter-spacing: .1em;
+                color: #a8a8a8;
+            }
+            p{
+                letter-spacing: .05em;  
+              }
+        }
+        img{
+            min-width: 100%;
+            min-height: 100%;
+
+        }
+    }
+    .photos{
+        grid-template-rows: 1fr 3fr;
+        overflow: hidden;
+        min-width: 100%;
+        min-height: 100%;
+        .text{
+            padding: 1rem 1rem;
+            background: #323230;
+            border-radius: 10px;
+            h2{
+                letter-spacing: .1em;
+                color: #a8a8a8;
+            }
+            p{
+              letter-spacing: .05em;  
+            }
+        }
+        img{
+            min-width: 100%;
+            min-height: 100%;
+            object-fit: cover;
+          
+
+        }
+    }
+}
