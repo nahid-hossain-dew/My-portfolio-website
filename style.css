@@ -9,7 +9,7 @@ main {
   grid-template-columns: 1.2fr 1fr 1fr;
   justify-items: center;
   height: 100vh;
-  gap: 2px;
+  gap: 3px;
 }
 main img {
   overflow: hidden;
@@ -29,13 +29,13 @@ main .panel img {
 }
 main .welcome {
   background: #323230;
-  padding: 0px 15px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 main .welcome .welcome-info {
   text-align: center;
+  padding: 0px 20px;
 }
 main .welcome .welcome-info h1 {
   color: #a8a8a8;
@@ -51,9 +51,10 @@ main .welcome nav {
   justify-items: center;
   border-bottom: 1px solid #a8a8a8;
   padding: 15px 0;
+  background-color: #a8a8a8;
 }
 main .welcome nav a {
-  color: #a8a8a8;
+  color: #323230;
   font-size: 11px;
   text-decoration: none;
   font-weight: bold;
@@ -62,8 +63,8 @@ main .welcome nav a {
   border-radius: 5px;
 }
 main .welcome nav a:hover {
-  background-color: #a8a8a8;
-  color: #323230;
+  background-color: #323230;
+  color: #a8a8a8;
 }
 main .welcome footer {
   align-self: flex-end;
@@ -72,9 +73,10 @@ main .welcome footer {
   border-top: 1px solid #a8a8a8;
   padding: 15px 0;
   width: 100%;
+  background: #a8a8a8;
 }
 main .welcome footer p {
-  color: #a8a8a8;
+  color: #323230;
   font-size: 16px;
 }
 main .about {
@@ -87,54 +89,135 @@ main .about .text {
   flex-direction: column;
   justify-content: center;
   padding: 1rem 1rem;
-  background: #323230;
+  background: #a8a8a8;
   text-align: center;
 }
 main .about .text h2 {
   letter-spacing: 0.1em;
-  color: #a8a8a8;
+  color: #323230;
 }
 main .about .text p {
   letter-spacing: 0.05em;
+  color: #323230;
 }
 main .about img {
   min-width: 100%;
   min-height: 100%;
   overflow: hidden;
 }
-main .photos {
+main .portfolio {
   grid-template-rows: 1fr 2fr;
   gap: 2px;
   overflow: hidden;
   min-width: 100%;
   min-height: 100%;
 }
-main .photos .text {
+main .portfolio .text {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 1rem 1rem;
-  background: #323230;
+  background: #a8a8a8;
   text-align: center;
 }
-main .photos .text h2 {
+main .portfolio .text h2 {
   letter-spacing: 0.1em;
-  color: #a8a8a8;
+  color: #323230;
 }
-main .photos .text p {
+main .portfolio .text p {
   letter-spacing: 0.05em;
+  color: #323230;
 }
-main .photos img {
+main .portfolio img {
   min-width: 100%;
   min-height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
+#contact {
+  margin-top: 2px;
+  padding: 30px;
+  background-color: #a8a8a8;
+  border-bottom: #323230;
+}
+#contact h1 {
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid #323230;
+  color: #323230;
+}
+#contact .contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  height: 85vh;
+  padding: 20px;
+  font-size: 20px;
+}
+#contact .contact-container .contacts-info {
+  justify-self: center;
+  color: #323230;
+}
+#contact .contact-container .contacts-info h2 {
+  padding: 10px 0px;
+}
+#contact .contact-container .contacts-info .contact {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px;
+}
+#contact .contact-form {
+  justify-self: center;
+}
+#contact .contact-form .form-container {
+  width: 400px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+#contact .contact-form .form-container input {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: #323230;
+  color: #a8a8a8;
+}
+#contact .contact-form .form-container input[type=text] {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#contact .contact-form .form-container input[type=email] {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#contact .contact-form .form-container textarea {
+  padding: 10px;
+  background-color: #323230;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  color: #a8a8a8;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#contact .contact-form .form-container .btn-container button {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #323230;
+  color: #a8a8a8;
+}
+#contact .contact-form .form-container .btn-container button i {
+  margin-left: 10px;
+}
+
 @media (max-width: 576px) {
   main {
     grid-template-columns: 1fr;
     grid-template-rows: 400px 700px 700px;
+    height: auto;
   }
   main .welcome h1 {
     font-size: 25px;
@@ -163,21 +246,25 @@ main .photos img {
     height: 400px;
     overflow: hidden;
   }
-  main .photos {
+  main .portfolio {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
   }
-  main .photos .text h2 {
+  main .portfolio .text h2 {
     font-size: 25px;
   }
-  main .photos .text p {
+  main .portfolio .text p {
     font-size: 16px;
+  }
+  #contact .contact-container {
+    grid-template-columns: 1fr;
   }
 }
 @media (min-width: 577px) and (max-width: 768px) {
   main {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 500px 400px 400px;
+    height: auto;
   }
   main .welcome {
     grid-column: span 2;
@@ -192,7 +279,7 @@ main .photos img {
     -o-object-fit: cover;
        object-fit: cover;
   }
-  main .photos {
+  main .portfolio {
     grid-template-columns: 1fr 1fr;
     grid-column: span 2;
     grid-template-rows: 1fr;
@@ -206,7 +293,7 @@ main .photos img {
     -o-object-fit: cover;
        object-fit: cover;
   }
-  main .photos {
+  main .portfolio {
     grid-template-columns: 1fr 1fr;
     grid-column: span 2;
     grid-template-rows: 1fr;
