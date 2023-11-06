@@ -5,8 +5,8 @@
     box-sizing: border-box;
 }
 html{
-    scroll-behavior: smooth;
-    scroll-padding: .1rem;
+    // scroll-behavior: smooth;
+    // scroll-padding: .1rem;
 }
 
 // ################ main section styling #################
@@ -97,20 +97,24 @@ main{
             border-bottom: 1px solid $font-color;
             padding: 15px 0;
             background-color: $font-color;
-            a{
-            color: $main-color;
-            font-size: 11px;
-            font-weight: bold;
-            text-decoration: none;
-            font-weight: bold;
-            text-transform: uppercase;
-            padding: 8px 5px;
-            border-radius: 5px;
-            letter-spacing: .1em;
-            &:hover{
-             background-color: skyblue;
-             color: $main-color;
+            li{
+                list-style: none;
+                a{
+                    color: $main-color;
+                    font-size: 11px;
+                    font-weight: bold;
+                    text-decoration: none;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    padding: 8px 5px;
+                    border-radius: 5px;
+                    letter-spacing: .1em;
+                    &:hover{
+                     background-color: skyblue;
+                     color: $main-color;
+                    }
             }
+          
         }
       }
       footer{
