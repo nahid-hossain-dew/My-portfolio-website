@@ -6,7 +6,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding: 0.5rem;
+  scroll-padding: 0.1rem;
 }
 
 main {
@@ -47,8 +47,18 @@ main .welcome .welcome-info {
   align-items: center;
   justify-content: center;
 }
+main .welcome .welcome-info .skills {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+  margin-top: 20px;
+  color: skyblue;
+}
+main .welcome .welcome-info .skills i {
+  font-size: 30px;
+}
 main .welcome .welcome-info h1 {
-  font-size: 40px;
+  font-size: 30px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: transparent;
@@ -78,6 +88,7 @@ main .welcome nav {
 main .welcome nav a {
   color: #323230;
   font-size: 11px;
+  font-weight: bold;
   text-decoration: none;
   font-weight: bold;
   text-transform: uppercase;
@@ -98,9 +109,21 @@ main .welcome footer {
   width: 100%;
   background: #a8a8a8;
 }
+main .welcome footer .socialmedia-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+main .welcome footer .socialmedia-container i {
+  font-size: 25px;
+  color: #323230;
+  margin-bottom: 5px;
+}
 main .welcome footer p {
   color: #323230;
   font-size: 16px;
+  font-weight: bold;
 }
 main .about {
   grid-template-rows: 2fr 1fr;
