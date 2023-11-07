@@ -7,7 +7,6 @@
 main {
   display: grid;
   grid-template-columns: 1.2fr 1fr 1fr;
-  justify-items: center;
   height: 100vh;
   gap: 3px;
 }
@@ -46,11 +45,29 @@ main .welcome .welcome-info .skills {
   display: flex;
   gap: 20px;
   padding: 10px;
-  margin-top: 20px;
+  margin-top: 40px;
   color: skyblue;
 }
 main .welcome .welcome-info .skills i {
-  font-size: 30px;
+  font-size: 35px;
+  animation: bounce 1s infinite alternate;
+}
+main .welcome .welcome-info .skills i:nth-child(1) {
+  animation-delay: 0.2s;
+}
+main .welcome .welcome-info .skills i:nth-child(2) {
+  animation-delay: 0.5s;
+}
+main .welcome .welcome-info .skills i:nth-child(3) {
+  animation-delay: 0.7s;
+}
+main .welcome .welcome-info .skills i:nth-child(4) {
+  animation-delay: 0.18s;
+}
+@keyframes bounce {
+  100% {
+    transform: translateY(-15px);
+  }
 }
 main .welcome .welcome-info h1 {
   font-size: 30px;
@@ -60,7 +77,7 @@ main .welcome .welcome-info h1 {
   background-image: linear-gradient(skyblue, skyblue);
   background-repeat: no-repeat;
   -webkit-background-clip: text;
-  background-position: -400px 0;
+  background-position: -350px 0;
   animation: backcolor 6s linear infinite alternate;
 }
 @keyframes backcolor {
@@ -69,8 +86,21 @@ main .welcome .welcome-info h1 {
   }
 }
 main .welcome .welcome-info p {
+  font-size: 25px;
   color: #a8a8a8;
   letter-spacing: 0.05em;
+}
+main .welcome .welcome-info button {
+  padding: 0.5em 0.6em;
+  margin-top: 1em;
+  border-radius: 5px;
+  border: none;
+  background-color: #a8a8a8;
+  color: #323230;
+  display: inline-block;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  cursor: pointer;
 }
 main .welcome nav {
   display: grid;
@@ -97,6 +127,7 @@ main .welcome nav li a {
 main .welcome nav li a:hover {
   background-color: skyblue;
   color: #323230;
+  cursor: pointer;
 }
 main .welcome footer {
   align-self: flex-end;
@@ -117,6 +148,10 @@ main .welcome footer .socialmedia-container i {
   font-size: 25px;
   color: #323230;
   margin-bottom: 5px;
+}
+main .welcome footer .socialmedia-container i:hover {
+  color: skyblue;
+  cursor: pointer;
 }
 main .welcome footer p {
   color: #323230;
